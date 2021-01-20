@@ -1,0 +1,75 @@
+\documentclass[11pt]{article}
+
+\usepackage{sectsty}
+\usepackage{graphicx}
+%\usepackage{tabularx}
+\usepackage[table]{xcolor}
+
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+\date{}
+\newcommand{\imagew}{1.1cm}
+\newcommand{\imagespace}{2mm}
+
+{\rowcolors{1}{white}{black!7!white!93}
+
+\newcommand{\arbalester}{\includegraphics[width=\imagew]{icons/arbalester.png}\hspace{\imagespace}}
+\newcommand{\bombardcannon}{\includegraphics[width=\imagew]{icons/bombardcannon.png}\hspace{\imagespace}}
+\newcommand{\camel}{\includegraphics[width=\imagew]{icons/camel.png}\hspace{\imagespace}}
+\newcommand{\cavarcher}{\includegraphics[width=\imagew]{icons/cavarcher.png}\hspace{\imagespace}}
+\newcommand{\eagle}{\includegraphics[width=\imagew]{icons/eagle.png}\hspace{\imagespace}}
+\newcommand{\elephant}{\includegraphics[width=\imagew]{icons/elephant.png}\hspace{\imagespace}}
+\newcommand{\halberdier}{\includegraphics[width=\imagew]{icons/halberdier.png}\hspace{\imagespace}}
+\newcommand{\hussar}{\includegraphics[width=\imagew]{icons/hussar.png}\hspace{\imagespace}}
+\newcommand{\monk}{\includegraphics[width=\imagew]{icons/monk.png}\hspace{\imagespace}}
+\newcommand{\onager}{\includegraphics[width=\imagew]{icons/onager.png}\hspace{\imagespace}}
+\newcommand{\paladin}{\includegraphics[width=\imagew]{icons/paladin.png}\hspace{\imagespace}}
+\newcommand{\scorpion}{\includegraphics[width=\imagew]{icons/scorpion.png}\hspace{\imagespace}}
+\newcommand{\skirmisher}{\includegraphics[width=\imagew]{icons/skirmisher.png}\hspace{\imagespace}}
+\newcommand{\swordsman}{\includegraphics[width=\imagew]{icons/swordsman.png}\hspace{\imagespace}}
+\newcommand{\trebuchet}{\includegraphics[width=\imagew]{icons/trebuchet.png}\hspace{\imagespace}}
+\newcommand{\handcannoneer}{\includegraphics[width=\imagew]{icons/handcannoneer.png}\hspace{\imagespace}}
+\newcommand{\ram}{\includegraphics[width=\imagew]{icons/ram.png}\hspace{\imagespace}}
+
+\title{Age of Empires 2 - Land Units Counters}
+
+\renewcommand{\seriesdefault}{\bfdefault}
+%\renewcommand\tabularxcolumn[1]{m{#1}}
+
+\begin{document}
+\pagenumbering{gobble}
+%\maketitle	
+
+\begin{center}
+\begin{tabular}{ m{0.1\textwidth}m{0.25\textwidth}m{0.65\textwidth}  }
+  & Unit &  is countered by: \\ 
+ \eagle & Eagle Warrior & \swordsman \handcannoneer \\ 
+ \swordsman & Swordsman & \arbalester \handcannoneer \cavarcher \scorpion \elephant  \\
+ \halberdier & Halberdier & \arbalester \handcannoneer \swordsman \scorpion \\
+ \skirmisher & Skirmisher & \hussar \paladin \onager \eagle \swordsman \\
+ \arbalester & Archer& \skirmisher \onager \paladin \hussar \eagle \ram \\
+ \handcannoneer & Hand Cannoneer & \skirmisher \onager \paladin \scorpion  \\
+ \cavarcher & Cav. Archer & \skirmisher \eagle \onager \camel \\
+ \hussar & Light Cavalry & \halberdier \camel\\
+ \paladin & Heavy Cavalry & \halberdier \camel \monk \\
+ \camel & Camel & \halberdier \swordsman \arbalester\\
+ \elephant & Battle Elephant & \halberdier \camel \monk \scorpion \\
+ \onager & Onager & \hussar \paladin \eagle \bombardcannon \\
+ \ram & Ram & \swordsman \hussar \paladin \bombardcannon\\
+ \scorpion & Scorpion & \hussar \paladin \onager \bombardcannon \eagle\\
+ \bombardcannon & Bombard Cannon & \hussar \paladin \swordsman \\
+ \trebuchet & Trebuchet & \hussar \paladin \bombardcannon \ram\\
+ \monk&Monk & \hussar \eagle \\
+\end{tabular}
+
+\vspace{2mm}
+Author: u/Frotron, based on diagrams by u/HavelGotPPI
+
+\end{center}
+
+\end{document}
