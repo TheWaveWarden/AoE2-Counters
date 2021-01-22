@@ -1,6 +1,6 @@
 This repo provides the source for a counter sheet containing the base units of Age of Empires II Definitive Edition.
 
-![alt text](aoe2_counters.pdf)
+![This is the current version of the sheet!](aoe2_counters.pdf)
 
 # Build the sheet
 
