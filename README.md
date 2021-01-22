@@ -9,7 +9,7 @@ On Ubuntu/Debian, you can use these in a terminal:
 
 ```bash
 #install prerequisites
-sudo apt-get install texlive-latex-base
+sudo apt-get install texlive-latex-base texlive-latex-extra
 
 #compile pdf
 pdflatex aoe2_counters.tex
